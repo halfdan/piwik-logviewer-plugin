@@ -8,7 +8,26 @@ Database logging was largely un-used and not stable in Piwik prior to version 1.
 
 ## Documentation
 
-Coming. 
+1. Clone the plugin into the plugins directory of your Piwik installation.
+
+   ```
+   cd plugins/
+   git clone https://github.com/halfdan/piwik-logviewer-plugin.git LogViewer
+   ```
+
+2. Login as superuser into your Piwik installation and activate the plugin under Settings -> Plugins
+
+3. Activate database logging by adding the following lines to your `config/config.ini.php`
+
+   ```
+   [log]
+   logger_error[]          = database
+   logger_exception[]      = database
+   ```
+
+   This will enable database logging for exceptions and errors.
+
+4. If there are any exceptions or errors logged by Piwik you can view them under Settings -> Diagnostic -> Log Viewer
 
 ## Contribute 
 
