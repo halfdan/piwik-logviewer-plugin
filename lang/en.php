@@ -14,4 +14,7 @@ $translations = array(
 	'LogViewer_MenuLogViewer' => 'Log Viewer',
 	'LogViewer_AdminHead' => 'Log Viewer',
 	'LogViewer_AdminDescription' => 'Here you can view recent logs from your database. In order for Piwik to log to the database add the following lines to config/config.ini.php:',
+	'LogViewer_Exceptions' => 'Exceptions',
+	'LogViewer_Messages' => 'Messages',
+	'LogViewer_Errors' => 'Errors',
 );
