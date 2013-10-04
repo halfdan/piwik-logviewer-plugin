@@ -1,0 +1,11 @@
+{
+    "LogViewer": {
+        "PluginDescription": "Display Piwik logs in the database.",
+        "MenuLogViewer": "Log Viewer",
+        "AdminHead": "Log Viewer",
+        "AdminDescription": "Here you can view recent logs from your database. In order for Piwik to log to the database add the following lines to config\/config.ini.php:",
+        "Exceptions": "Exceptions",
+        "Messages": "Messages",
+        "Errors": "Errors"
+    }
+}
