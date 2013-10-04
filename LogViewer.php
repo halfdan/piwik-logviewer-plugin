@@ -8,37 +8,18 @@
  * @category Piwik_Plugins
  * @package Piwik_LogViewer
  */
+namespace Piwik\Plugins\LogViewer;
 
 /**
  *
  * @package Piwik_LogViewer
  */
-class Piwik_LogViewer extends Piwik_Plugin
+class LogViewer extends \Piwik\Plugin
 {
-	/**
-	 * Return information about this plugin.
-	 *
-	 * @see Piwik_Plugin
-	 *
-	 * @return array
-	 */
-	public function getInformation()
-	{
-		return array(
-			'description' => Piwik_Translate('LogViewer_PluginDescription'),
-			'author' => 'Fabian Becker <halfdan@xnorfz.de>',
-			'author_homepage' => 'http://geekproject.eu/',
-			'license' => 'GPL v3 or later',
-			'license_homepage' => 'http://www.gnu.org/licenses/gpl.html',
-			'version' => '0.1',
-			'translationAvailable' => true
-		);
-	}
-
 	public function getListHooksRegistered()
 	{
 		return array(
-			'AdminMenu.add' => 'addAdminMenu',
+			'Menu.Admin.add' => 'addAdminMenu',
 			'TaskScheduler.getScheduledTasks' => 'getScheduledTasks'
 		);
 	}
