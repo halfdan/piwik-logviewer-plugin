@@ -1,0 +1,18 @@
+{
+    "name": "LogViewer",
+    "description": "Display log entries from the Piwik database.",
+    "version": "0.5.0",
+    "keywords": ["log", "logging", "exception", "error"],
+    "homepage": "http://github.com/halfdan/piwik-logviewer-plugin",
+    "license": "GPL-3.0+",
+    "donate": {
+        "flattr": "https://flattr.com/profile/halfdan"
+    },
+    "authors": [
+        {
+            "name": "Fabian Becker",
+            "email": "halfdan@xnorfz.de",
+            "homepage": "http://geekproject.eu"
+        }
+    ]
+}
