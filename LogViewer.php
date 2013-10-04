@@ -19,7 +19,7 @@ class LogViewer extends \Piwik\Plugin
 	public function getListHooksRegistered()
 	{
 		return array(
-			'Menu.Admin.add' => 'addAdminMenu',
+			'Menu.Admin.addItems' => 'addAdminMenu',
 			'TaskScheduler.getScheduledTasks' => 'getScheduledTasks'
 		);
 	}
